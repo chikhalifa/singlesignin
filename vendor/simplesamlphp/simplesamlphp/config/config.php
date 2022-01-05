@@ -72,8 +72,8 @@ $config = [
      * The email address will be used as the recipient address for error reports, and
      * also as the technical contact in generated metadata.
      */
-    'technicalcontact_name' => 'Administrator',
-    'technicalcontact_email' => 'na@example.org',
+    'technicalcontact_name' => 'Samuel Obe',
+    'technicalcontact_email' => 'samuelo@nubiaville.onmicrosoft.com',
 
     /*
      * (Optional) The method by which email is delivered.  Defaults to mail which utilizes the
@@ -138,7 +138,7 @@ $config = [
      * metadata listing and diagnostics pages.
      * You can also put a hash here; run "bin/pwgen.php" to generate one.
      */
-    'auth.adminpassword' => '123',
+    'auth.adminpassword' => 'welcomenewuser',
 
     /*
      * Set this options to true if you want to require administrator password to access the web interface
@@ -546,8 +546,10 @@ $config = [
      *
      * Example:
      *  'session.cookie.path' => '/simplesaml/',
+     * 'session.cookie.path' => '/',
      */
-    'session.cookie.path' => '/',
+    
+    'session.cookie.path' => '/simplesaml/',
 
     /*
      * Cookie domain.
@@ -576,9 +578,10 @@ $config = [
      * attribute will be sent.
      *
      * Example:
-     *  'session.cookie.samesite' => 'None',
+      'session.cookie.samesite' => 'None',
      */
-    'session.cookie.samesite' => \SimpleSAML\Utils\HTTP::canSetSameSiteNone() ? 'None' : null,
+    'session.cookie.samesite' => 'Lax',
+    'session.cookie.samesite' => \SimpleSAML\Utils\HTTP::canSetSameSiteNone() ? 'Lax' : null,
 
     /*
      * Options to override the default settings for php sessions.
