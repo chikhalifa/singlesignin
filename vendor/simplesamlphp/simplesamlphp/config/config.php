@@ -28,6 +28,7 @@ $config = [
      * reverse proxy).
      */
     'baseurlpath' => 'simplesaml/',
+    // 'baseurlpath' => 'singlesignin/www/',
 
     /*
      * The 'application' configuration array groups a set configuration options
